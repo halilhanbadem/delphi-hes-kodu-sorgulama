@@ -1,4 +1,4 @@
-unit uBilgi;
+﻿unit uBilgi;
 
 interface
 
@@ -32,7 +32,7 @@ implementation
      uses uMain;
 procedure TfBilgi.cxButton1Click(Sender: TObject);
 begin
- ShowMessage('Sisteme giriş yapıldı. Giriş kontrol edilmedi. Lütfen giriş yaptığınızdan emin olun.');
+ ShowMessage('Sisteme istek gönderildi. Ekranda giriş yapıldığından emin olunuz');
  Self.Close;
  fMain.libHESKontrol.loginEDevlet(txtTCKimlik.Text, txtParola.Text);
 end;

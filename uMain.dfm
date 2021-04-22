@@ -25,7 +25,6 @@ object fMain: TfMain
     TabOrder = 0
     object gridOgrencilerDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
-      ScrollbarAnnotations.CustomAnnotations = <>
       DataController.DataSource = dsMemTable
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -96,7 +95,6 @@ object fMain: TfMain
     Contexts = <>
     TabOrder = 1
     TabStop = False
-    ExplicitWidth = 884
     object dxRibbon1Tab1: TdxRibbonTab
       Active = True
       Caption = 'E-Devlet Login '#304#351'lemi'
@@ -129,15 +127,13 @@ object fMain: TfMain
     Width = 1130
     Height = 196
     Align = alTop
-    TabOrder = 6
-    ExplicitLeft = 8
-    ExplicitTop = 152
-    ExplicitWidth = 300
-    ExplicitHeight = 150
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 2
     ControlData = {
       4C000000CA740000421400000000000000000000000000000000000000000000
       000000004C000000000000000000000001000000E0D057007335CF11AE690800
-      2B2E126208000000000000004C0000000114020000000000C000000000000046
+      2B2E12620A000000000000004C0000000114020000000000C000000000000046
       8000000000000000000000000000000000000000000000000000000000000000
       00000000000000000100000000000000000000000000000000000000}
   end
@@ -235,8 +231,8 @@ object fMain: TfMain
           Visible = True
           ItemName = 'dxBarLargeButton2'
         end>
-      OneOnRow = True
-      Row = 2
+      OneOnRow = False
+      Row = 0
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -267,8 +263,8 @@ object fMain: TfMain
           Visible = True
           ItemName = 'dxBarLargeButton6'
         end>
-      OneOnRow = True
-      Row = 1
+      OneOnRow = False
+      Row = 0
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -276,7 +272,7 @@ object fMain: TfMain
     object dxBarManager1Bar3: TdxBar
       Caption = 'Custom 2'
       CaptionButtons = <>
-      DockedLeft = 390
+      DockedLeft = 387
       DockedTop = 0
       FloatLeft = 902
       FloatTop = 2
@@ -291,7 +287,7 @@ object fMain: TfMain
           Visible = True
           ItemName = 'dxBarLargeButton8'
         end>
-      OneOnRow = True
+      OneOnRow = False
       Row = 0
       UseOwnFont = False
       Visible = True

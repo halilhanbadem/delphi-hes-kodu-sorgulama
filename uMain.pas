@@ -1,4 +1,4 @@
-unit uMain;
+﻿unit uMain;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.OleCtrls, libHESKontrol,
   SHDocVw, ComObj, cxGraphics, cxControls, cxLookAndFeels,
   cxLookAndFeelPainters, cxStyles, cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit,
-  cxNavigator, dxDateRanges, dxScrollbarAnnotations, Data.DB, cxDBData,
+  cxNavigator, dxDateRanges,  Data.DB, cxDBData,
   FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   dxRibbonSkins, dxRibbonCustomizationForm, dxBar, cxClasses, dxRibbon,
@@ -61,10 +61,8 @@ type
     dxRibbon1Tab2: TdxRibbonTab;
     dxBarManager1Bar4: TdxBar;
     dxBarLargeButton9: TdxBarLargeButton;
-    procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
     procedure dxBarLargeButton3Click(Sender: TObject);
     procedure dxBarLargeButton1Click(Sender: TObject);
     procedure dxBarLargeButton2Click(Sender: TObject);
@@ -91,19 +89,9 @@ implementation
 
 uses uBilgi;
 
-procedure TfMain.Button1Click(Sender: TObject);
-begin
- libHESKontrol.loginEDevlet('tc_kimlik', 'edevlet-sifre');
-end;
-
 procedure TfMain.Button2Click(Sender: TObject);
 begin
   libHESKontrol.goHESModule;
-end;
-
-procedure TfMain.Button3Click(Sender: TObject);
-begin
- ShowMessage(libHESKontrol.HESControl('2222'));
 end;
 
 procedure TfMain.dxBarLargeButton1Click(Sender: TObject);

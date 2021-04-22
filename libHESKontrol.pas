@@ -1,4 +1,4 @@
-unit libHESKontrol;
+﻿unit libHESKontrol;
 
 interface
  uses
@@ -98,7 +98,7 @@ begin
  MWB.OleObject.Document.getElementById('hes_kodu').value := HESKodu;
  MWB.OleObject.Document.forms[1].submit();
 
- Delay(4000); 
+ Delay(4000); ///internet hızına göre yapılmalı.
 
  while MWB.LocationURL = HESModuleURL do
  begin
@@ -116,7 +116,7 @@ begin
    Application.ProcessMessages;
  end;
 
- while ContainsText(sourceHTML, 'işleminiz devam ediyor, lütfen bekleyiniz') = true do
+ while ContainsText(sourceHTML, 'İşleminiz devam ediyor, lütfen bekleyiniz') = true do
  begin
    Application.ProcessMessages;
  end;
@@ -152,7 +152,7 @@ begin
 
  if MWB.LocationURL = EDevletURL then
  begin
-  raise Exception.Create('Kullanıcı adı veya şifre yanlış');
+  Exception.Create('Kullanıcı Adı veya Şifre Yanlış!');
   Result := False;
   abort;
  end else
